@@ -23,6 +23,6 @@ router.route("/movies-stories").get(getMoviesStories);
 
 router.route("/education-stories").get(getEducationStories);
 
-router.route("/your-stories").get(VerifyAuthentication, getYourStories);
+router.route("/your-stories").get(getYourStories);
 
 module.exports = router;
