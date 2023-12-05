@@ -23,6 +23,6 @@ router.route("/like-story").put(VerifyAuthentication, likeStory);
 
 router.route("/dislike-story").put(VerifyAuthentication, dislikeStory);
 
-router.route("/specific-story").get(VerifyAuthentication, getSpecificStory);
+router.route("/specific-story").get(getSpecificStory);
 
 module.exports = router;
